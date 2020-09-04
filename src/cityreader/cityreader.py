@@ -83,11 +83,56 @@ for c in cities:
 # TODO Get latitude and longitude values from the user
 
 
-def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
-    # within will hold the cities that fall within the specified region
-    within = []
+# def cityreader_stretch(lat1, lon1, lat2, lon2, cities2=[]):
+#     # within will hold the cities that fall within the specified region
+#     within = []
 
-    # Go through each city and check to see if it falls within
-    # the specified coordinates.
+#     for city in cities2:
+#         print(vars(city))
 
-    return within
+#     for city in cities2:
+#         if city.lat >= lat1 and city.lat <= lat2 and city.lon <= lon1 and city.lon >= lon2:
+#             within.append(city)
+
+#     # Go through each city and check to see if it falls within
+#     # the specified coordinates.
+#     print("\n * * * \n\n")
+#     for cities in within:
+#         print(vars(cities))
+#     print("\n\n * * * \n")
+
+#     return within
+
+
+# playing = True
+
+# while playing == True:
+#     key = input("Enter lat1, lon1, lat2, lon2:  ")
+
+#     entry = key.split()
+
+#     print(entry)
+
+#     k_lat1 = ""
+#     k_lon1 = ""
+#     k_lat2 = ""
+#     k_lon2 = ""
+
+#     if len(entry) == 4:
+
+#         k_lat2 = float(max(entry[0], entry[2]))
+#         k_lat1 = float(min(entry[0], entry[2]))
+#         k_lon2 = float(max(entry[1], entry[3]))
+#         k_lon1 = float(min(entry[1], entry[3]))
+
+#         print(k_lat1, k_lon1, k_lat2, k_lon2)
+
+#         cityreader_stretch(k_lat1, k_lon1, k_lat2, k_lon2, cityreader(cities))
+
+#         playing = False
+
+#     elif entry[0] == 'q':
+#         quit()
+
+#     else:
+#         print("must enter four numbers")
